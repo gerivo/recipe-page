@@ -9,10 +9,14 @@
 }
 
 * {
+    color: hsl(30, 10%, 34%);
     font-family: 'outfit';
     font-size: 16px;
     padding: 0;
     margin: 0;
+}
+body {
+    background-color: hsl(30, 54%, 90%);
 }
 
 header > *:not(img), section, hr {
@@ -28,18 +32,21 @@ h1, h2 {
 }
 
 h1 {
+    color: hsl(24, 5%, 18%);
     font-size: 2.2rem;
     font-weight: 400;
     line-height: 100%;
 }
 
 h2 {
+    color: hsl(14, 45%, 36%);
     font-size: 1.7rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
 h3 {
+    color: hsl(332, 51%, 32%);
     font-size: 1.35rem;
     font-weight: 600;
 }
@@ -49,9 +56,10 @@ p {
 }
 
 .card {
-    background-color: blue;
+    background-color: hsl(330, 100%, 98%);
     padding: 1.5rem;
     padding-bottom: 0.5rem;
+    border-radius: 0.75rem;
 }
 
 img {
@@ -68,6 +76,15 @@ li {
     padding-left: 1rem;
 }
 
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.card li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
 table {
     width: 100%;
     box-sizing: border-box;
@@ -80,7 +97,12 @@ td {
 }
 
 tr {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.value {
+    font-weight: 600;
+    color: hsl(14, 45%, 36%);
 }
 
 table tr:last-child {
@@ -91,9 +113,14 @@ span {
     font-weight:700;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color:hsl(30, 18%, 87%);
+}
+
 @media (min-width: 720px) {
     body {
-        background-color: hsl(330, 100%, 98%);
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
@@ -104,6 +131,7 @@ span {
         margin: 2rem 0 1rem 0;
         width: 720px;
         padding-bottom:1px;
+        border-radius: 1.5rem;
     }
 
     img {
@@ -111,6 +139,7 @@ span {
         margin-top: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
+        border-radius: 0.75rem;
     }
 }
 
